@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-var bullet = preload("res://Player_Bullet.tscn")
+var bullet = preload("res://Scenes/Player_Bullet.tscn")
 
 signal create_bullet(bullet, location)
 
