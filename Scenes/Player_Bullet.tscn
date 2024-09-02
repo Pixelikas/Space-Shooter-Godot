@@ -10,7 +10,7 @@ extents = Vector2( 5.00223, 2.00762 )
 texture = ExtResource( 2 )
 script = ExtResource( 1 )
 
-[node name="Hitbox" type="Area2D" parent="."]
+[node name="Hitbox" type="Area2D" parent="." groups=["Enemy_damager"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
 visible = false
