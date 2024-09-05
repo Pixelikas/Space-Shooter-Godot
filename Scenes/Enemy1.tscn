@@ -11,7 +11,7 @@ texture = ExtResource( 2 )
 flip_h = true
 script = ExtResource( 1 )
 
-[node name="Hitbox" type="Area2D" parent="."]
+[node name="Hitbox" type="Area2D" parent="." groups=["Enemy"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
 shape = SubResource( 1 )
