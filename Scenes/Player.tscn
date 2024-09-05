@@ -16,3 +16,10 @@ script = ExtResource( 2 )
 visible = false
 position = Vector2( -0.0156674, 0 )
 shape = SubResource( 1 )
+
+[node name="Reload_timer" type="Timer" parent="."]
+wait_time = 0.25
+autostart = true
+
+[connection signal="area_entered" from="Hitbox" to="." method="_on_Hitbox_area_entered"]
+[connection signal="timeout" from="Reload_timer" to="." method="_on_Reload_timer_timeout"]
